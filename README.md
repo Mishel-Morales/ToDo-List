@@ -22,4 +22,4 @@ Una **ToDo List** (lista de tareas) simple hecha desde cero usando HTML, CSS, Ja
 
 ## Clona este repositorio:
    ```bash
-   git clone https://github.com/tu-usuario/tu-repo.git
+  git@github.com:Mishel-Morales/ToDo-List.git
