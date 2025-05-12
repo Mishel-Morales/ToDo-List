@@ -2,3 +2,6 @@
     background: linear-gradient(180deg, rgb(14, 14, 82), blue, #00c6ff, aqua, rgb(44, 182, 159));
     height: 100vh;
 }
+.buscarInput{
+    height: 35px;
+}
