@@ -8,9 +8,9 @@ const agregar = (event) => {
         li.classList.add ('list-unstyled', 'ms-5')
     let div = document.createElement('div')
     let input = document.createElement('input')
-    input.value = inputTask.value
-    input.classList.add ('p-1', 'rounded', 'w-75')
-    inputTask.value = ''
+        input.value = inputTask.value
+        input.classList.add ('p-1', 'rounded', 'w-75')
+        inputTask.value = ''
     let buttonOne = document.createElement('button')
         buttonOne.innerText = 'Eliminar'
         buttonOne.className = 'bg-danger m-1 p-1 rounded'
@@ -32,12 +32,20 @@ const agregar = (event) => {
 }
 
 botton.addEventListener('click', () => {
-    agregar()
+    if(input.value == ''){
+        alert('Debe ingresar una tarea')
+    } else{
+        agregar()
+    }
 })
 
 input.addEventListener('keydown', (event) => {
     if(event.key == 'Enter'){
-        agregar()
+        if(input.value == ''){
+            alert('Debe ingresar una tarea')
+        } else{
+            agregar()
+        }
     }
 })
 
